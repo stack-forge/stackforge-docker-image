@@ -8,4 +8,4 @@ RUN apt install software-properties-common -y -qq
 RUN apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 RUN apt install apt-transport-https -y -qq
 RUN apt update -qq
-RUN apt install terraform
+RUN apt install terraform=0.14.9
